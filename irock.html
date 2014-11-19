@@ -16,7 +16,7 @@
 	  writeCookie("irock_username",userName,365);
 	}}
 	document.getElementById("rockImg").src="rock_happy.jpeg";
-	setTimeout("document.getElementById('rockImg').src='rock.jpeg';",1000);
+	setTimeout("document.getElementById('rockImg').src='/images/rock.jpeg';",1000);
     }
     function resizeRock(){
 	document.getElementById("rockImg").style.height=(document.body.clientHeight - 100)*0.9
@@ -33,7 +33,7 @@
 </head>
 <body onload="greetUser();resizeRock()" onresize="resizeRock()">
   <div style="margin-top:100px; text-align:center">
-	<img id="rockImg" src="rock.jpeg" alt="iRock" style="cursor:pointer" onclick="touchrock()"  />	
+	<img id="rockImg" src="/images/rock.jpeg" alt="iRock" style="cursor:pointer" onclick="touchrock()"  />	
   </div>
 
 
